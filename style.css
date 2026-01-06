@@ -6,21 +6,17 @@
 }
 
 body {
-    background: #0b0b0b;
-    color: white;
+    background: #000;
+    color: #fff;
 }
 
 /* NAVBAR */
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: #111;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+    background: #0b0b0b;
 }
 
 .logo {
@@ -33,53 +29,39 @@ body {
     width: 40px;
 }
 
-.logo span {
-    color: #f5c400;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-.nav-links {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-links a:hover {
+nav ul li a {
     color: #f5c400;
+    text-decoration: none;
 }
 
 /* SECTIONS */
 .section {
-    padding: 100px 30px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-.home {
-    margin-top: 80px;
+.dark {
+    background: #0b0b0b;
 }
 
-.home h1 {
-    font-size: 48px;
+.hero {
+    background: linear-gradient(135deg, #111, #000);
 }
 
-.home span {
+.hero h1 {
+    font-size: 40px;
     color: #f5c400;
 }
 
+/* BUTTONS */
 .cta-buttons {
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -87,65 +69,27 @@ body {
 }
 
 .buy-btn {
-    background: linear-gradient(135deg, #14f195, #00ffa3);
+    background: #14f195;
     border: none;
-    padding: 14px 30px;
+    padding: 12px 25px;
+    border-radius: 30px;
     font-weight: bold;
-    border-radius: 30px;
     cursor: pointer;
 }
 
-.community-btn {
-    background: transparent;
-    color: #f5c400;
+.social-btn {
     border: 2px solid #f5c400;
-    padding: 14px 30px;
+    padding: 12px 20px;
     border-radius: 30px;
-    cursor: pointer;
-}
-
-/* SOCIAL */
-.social-buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-buttons a {
+    color: #f5c400;
     text-decoration: none;
-    padding: 10px 22px;
-    border-radius: 25px;
-    color: white;
-}
-
-.twitter {
-    background: #1da1f2;
-}
-
-.telegram {
-    background: #0088cc;
-}
-
-/* DARK */
-.dark {
-    background: #151515;
-}
-
-.dark ul {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.dark li {
-    margin: 10px 0;
 }
 
 /* TOKENOMICS */
 .tokenomics-box {
     display: flex;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -153,49 +97,48 @@ body {
 .token-card {
     border: 2px solid #f5c400;
     padding: 20px;
-    width: 220px;
+    width: 200px;
     border-radius: 12px;
 }
 
-/* WHITEPAPER */
-.whitepaper-gallery {
+/* IMAGES */
+.images {
     display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.whitepaper-gallery img {
-    width: 240px;
+.images img {
+    width: 200px;
     border-radius: 10px;
+}
+
+/* GAME */
+#gameCanvas {
+    margin-top: 20px;
     border: 2px solid #f5c400;
+    background: #1a1a1a;
+}
+
+#startGame {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #f5c400;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /* FOOTER */
 footer {
-    background: #111;
-    padding: 20px;
-    font-size: 14px;
+    padding: 15px;
+    background: #0b0b0b;
 }
 
-/* 📱 MOBILE */
+/* MOBILE */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #111;
-        flex-direction: column;
-        width: 200px;
+    nav ul {
         display: none;
-        padding: 15px;
-    }
-
-    .nav-links.active {
-        display: flex;
     }
 }
