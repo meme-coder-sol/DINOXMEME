@@ -3,46 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DINOX ($DINO) | Solana Meme Coin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINOX | Meme Coin on Solana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="coinlogo.jpg" alt="DINOX Logo">
-                <span>DINOX</span>
-            </div>
-
-            <div class="menu-toggle" id="menuToggle">☰</div>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#tokenomics">Tokenomics</a></li>
-                <li><a href="#whitepaper">Whitepaper</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">
+            <img src="coinlogo.jpg" alt="DINOX">
+            <span>DINOX</span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#game">Game</a></li>
+        </ul>
+    </nav>
 
     <!-- HOME -->
-    <section id="home" class="section home">
-        <h1>DINOX <span>$DINO</span></h1>
-        <p>Fair Launch • Community Token • Solana Meme Chain</p>
+    <section id="home" class="section hero">
+        <h1>$DINO$ — DINOX</h1>
+        <p>Fair Launch | Community Token | Meme Chain on Solana</p>
 
         <div class="cta-buttons">
             <button class="buy-btn">Buy on Solana</button>
-            <button class="community-btn">Join Community</button>
-        </div>
-
-        <div class="social-buttons">
-            <a href="https://x.com/DINOXSOLMEME" class="twitter">Twitter</a>
-            <a href="https://t.me/DINOXSOL" class="telegram">Telegram</a>
+            <a href="https://x.com/DINOXSOLMEME" class="social-btn">Twitter</a>
+            <a href="https://t.me/DINOXSOL" class="social-btn">Telegram</a>
         </div>
     </section>
 
@@ -50,38 +41,40 @@
     <section id="about" class="section">
         <h2>About DINOX</h2>
         <p>
-            DINOX ($DINO) is a community-driven meme coin built on the Solana blockchain.
-            It is a fair launch token with zero VC, zero presale and full transparency.
+            DINOX is a fun and community-driven meme coin on the Solana blockchain.
+            Built for speed, fun, and fairness with zero tax and fair launch.
         </p>
     </section>
 
     <!-- VISION -->
     <section id="vision" class="section dark">
         <h2>Our Vision</h2>
-        <ul>
-            <li>🦖 100% Community Owned</li>
-            <li>🚀 Fair Launch Only</li>
-            <li>🌐 Strong Meme Culture</li>
-            <li>🔒 Liquidity Locked</li>
-        </ul>
+        <p>
+            Our vision is to build the strongest meme community on Solana,
+            powered by transparency, fun utilities, and long-term growth.
+        </p>
     </section>
 
     <!-- TOKENOMICS -->
     <section id="tokenomics" class="section">
-        <h2>Tokenomics</h2>
+        <h2>🔥 Tokenomics</h2>
 
         <div class="tokenomics-box">
             <div class="token-card">
                 <h3>Total Supply</h3>
-                <p>1,000,000,000</p>
+                <p>1,000,000,000 $DINO</p>
+            </div>
+            <div class="token-card">
+                <h3>Fair Launch</h3>
+                <p>100% Public</p>
+            </div>
+            <div class="token-card">
+                <h3>Liquidity</h3>
+                <p>Locked 🔒</p>
             </div>
             <div class="token-card">
                 <h3>Tax</h3>
                 <p>0% Buy / 0% Sell</p>
-            </div>
-            <div class="token-card">
-                <h3>Launch</h3>
-                <p>Fair Launch</p>
             </div>
             <div class="token-card">
                 <h3>Chain</h3>
@@ -90,19 +83,26 @@
         </div>
     </section>
 
-    <!-- WHITEPAPER -->
-    <section id="whitepaper" class="section dark">
+    <!-- WHITEPAPER IMAGES -->
+    <section class="section dark">
         <h2>Whitepaper</h2>
-        <div class="whitepaper-gallery">
+        <div class="images">
             <img src="whitepaper1.jpg">
             <img src="whitepaper2.jpg">
             <img src="whitepaper3.jpg">
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- GAME -->
+    <section id="game" class="section">
+        <h2>🦖 Play Dino Game</h2>
+        <p>Press Space or Tap to Jump</p>
+        <canvas id="gameCanvas" width="600" height="200"></canvas>
+        <button id="startGame">Play for Fun</button>
+    </section>
+
     <footer>
-        <p>© 2026 DINOX ($DINO) – Community Meme Coin on Solana</p>
+        <p>© 2026 DINOX | Meme Coin on Solana</p>
     </footer>
 
     <script src="script.js"></script>
